@@ -73,6 +73,11 @@ GEM
     crass (1.0.6)
     diff-lcs (1.4.4)
     erubi (1.10.0)
+    factory_bot (6.2.1)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
     faker (2.18.0)
       i18n (>= 1.6, < 2)
     ffi (1.15.0)
@@ -95,6 +100,8 @@ GEM
     minitest (5.14.4)
     nio4r (2.5.7)
     nokogiri (1.11.4-x86_64-darwin)
+      racc (~> 1.4)
+    nokogiri (1.11.4-x86_64-linux)
       racc (~> 1.4)
     puma (5.3.1)
       nio4r (~> 2.0)
@@ -170,10 +177,12 @@ GEM
 
 PLATFORMS
   x86_64-darwin-19
+  x86_64-linux
 
 DEPENDENCIES
   active_model_serializers (~> 0.10.12)
   byebug
+  factory_bot_rails
   faker (~> 2.18)
   listen (~> 3.3)
   puma (~> 5.0)
@@ -185,4 +194,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   2.2.16
+   2.4.7
